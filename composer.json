@@ -1,0 +1,19 @@
+{
+    "name": "tobier/hacking",
+    "description": "Creates some shortcodes to integrate some basic security vulnerabilities",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "Tobias Keller",
+            "email": "mail@tobier.de"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hacking\\": "src/"
+        }
+    }
+}

